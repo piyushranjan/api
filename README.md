@@ -326,7 +326,7 @@ The id is the id returned when you first created the worker. Once called the bro
 ## Getting Worker Status
 Sometimes you will need to check on the status of a worker. Not to be confused with the state of the javascript environment within the worker this method simply determines whether the worker is in queue, running or terminated.
 
-		`GET /worker/<id>`
+  `GET /worker/<id>`
 
 > This call requires authentication. If the request was made unauthorized a `401 Unauthorized` response is given. Alternatively if the authorized user is not the owner of the worker a `403 Forbidden` response is given.
 
